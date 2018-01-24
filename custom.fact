@@ -1,0 +1,8 @@
+[packages]
+db-server=mariadb-server
+web-server=httpd
+
+[general]
+package = httpd
+service = httpd
+state = started
