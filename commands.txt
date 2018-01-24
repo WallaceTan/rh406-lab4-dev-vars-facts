@@ -2,3 +2,5 @@ ansible webserver -m setup
 ansible webserver -m setup -a 'filter=ansible_user*'
 ansible webserver -m setup -a 'filter=ansible_local'
 ansible-playbook --syntax-check setup_facts.yml
+ansible webserver -m command -a "systemctl status httpd"
+lab manage-variables-facts grade
